@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 20px;
+    border: 2px solid #555;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 5px;
+    color: #ccc;
+}
+
+input, button {
+    background-color: #222;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    width: auto;
+    background-color: #007BFF;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.color-sample {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #555;
+}
+
+.inspector {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.inspector input {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.result-message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.back-button {
+    margin-top: 20px;
+    background-color: #555;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+.color-difference {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.color-samples {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Botão de voltar no topo */
+.back-button-fixed {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Oculto por padrão, será mostrado quando necessário */
+}
+
+.back-button-fixed:hover {
+    background-color: #333;
+}
